@@ -1,0 +1,82 @@
+[
+  {
+    "id": "sign-jag",
+    "swedishWord": "jag",
+    "gloss": "JAG",
+    "description": "Point toward yourself with a clear, calm movement.",
+    "videoUrl": "/videos/placeholders/jag.mp4",
+    "animationKey": "avatar.sign.jag"
+  },
+  {
+    "id": "sign-du",
+    "swedishWord": "du",
+    "gloss": "DU",
+    "description": "Point toward the person you are addressing.",
+    "videoUrl": "/videos/placeholders/du.mp4",
+    "animationKey": "avatar.sign.du"
+  },
+  {
+    "id": "sign-vilja",
+    "swedishWord": "vilja",
+    "gloss": "VILJA",
+    "description": "Use the placeholder movement for wanting or intention.",
+    "videoUrl": "/videos/placeholders/vilja.mp4",
+    "animationKey": "avatar.sign.vilja"
+  },
+  {
+    "id": "sign-ata",
+    "swedishWord": "äta",
+    "gloss": "ATA",
+    "description": "Bring the hand toward the mouth area to represent eating.",
+    "videoUrl": "/videos/placeholders/ata.mp4",
+    "animationKey": "avatar.sign.ata"
+  },
+  {
+    "id": "sign-skola",
+    "swedishWord": "skola",
+    "gloss": "SKOLA",
+    "description": "Placeholder school sign for future verified video or avatar motion.",
+    "videoUrl": "/videos/placeholders/skola.mp4",
+    "animationKey": "avatar.sign.skola"
+  },
+  {
+    "id": "sign-imorgon",
+    "swedishWord": "imorgon",
+    "gloss": "IMORGON",
+    "description": "Placeholder time sign for tomorrow.",
+    "videoUrl": "/videos/placeholders/imorgon.mp4",
+    "animationKey": "avatar.sign.imorgon"
+  },
+  {
+    "id": "sign-tack",
+    "swedishWord": "tack",
+    "gloss": "TACK",
+    "description": "Move the hand outward from the mouth area in a thanking motion.",
+    "videoUrl": "/videos/placeholders/tack.mp4",
+    "animationKey": "avatar.sign.tack"
+  },
+  {
+    "id": "sign-hjalp",
+    "swedishWord": "hjälp",
+    "gloss": "HJALP",
+    "description": "Placeholder help sign for future native signer validation.",
+    "videoUrl": "/videos/placeholders/hjalp.mp4",
+    "animationKey": "avatar.sign.hjalp"
+  },
+  {
+    "id": "sign-vatten",
+    "swedishWord": "vatten",
+    "gloss": "VATTEN",
+    "description": "Placeholder water sign for future verified media.",
+    "videoUrl": "/videos/placeholders/vatten.mp4",
+    "animationKey": "avatar.sign.vatten"
+  },
+  {
+    "id": "sign-arbete",
+    "swedishWord": "arbete",
+    "gloss": "ARBETE",
+    "description": "Placeholder work sign for future animation data.",
+    "videoUrl": "/videos/placeholders/arbete.mp4",
+    "animationKey": "avatar.sign.arbete"
+  }
+]
