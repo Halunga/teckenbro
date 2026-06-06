@@ -1,5 +1,27 @@
 [
   {
+    "id": "sign-hur",
+    "swedishWord": "hur",
+    "gloss": "HUR",
+    "description": "Stora nyphanden, uppåtriktad och vänstervänd, slås framåt, upprepas.",
+    "videoUrl": "https://teckensprakslexikon.su.se/ord/04569",
+    "animationKey": "",
+    "transcription": "􌤲􌤵􌤶􌥱􌥾􌥼􌥻",
+    "lexiconUrl": "https://teckensprakslexikon.su.se/ord/04569",
+    "imageUrl": "https://teckensprakslexikon.su.se/photos/04/hur-04569-photo-1.jpg"
+  },
+  {
+    "id": "sign-ma",
+    "swedishWord": "må",
+    "gloss": "MÅ",
+    "description": "Flata handen, vänsterriktad och inåtvänd, förs nedåt med bibehållen kontakt med bröstet.",
+    "videoUrl": "https://teckensprakslexikon.su.se/ord/00173",
+    "animationKey": "",
+    "transcription": "􌤓􌤢􌥓􌥘􌤟􌥧",
+    "lexiconUrl": "https://teckensprakslexikon.su.se/ord/00173",
+    "imageUrl": "https://teckensprakslexikon.su.se/photos/00/ma-00173-photo-1.jpg"
+  },
+  {
     "id": "sign-jag",
     "swedishWord": "jag",
     "gloss": "PRO1",

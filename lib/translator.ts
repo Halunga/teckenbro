@@ -18,6 +18,9 @@ const dictionary: Record<string, string> = {
   thanks: "tack",
   thank: "tack",
   help: "hjälp",
+  how: "hur",
+  feel: "må",
+  feeling: "må",
   water: "vatten",
   work: "arbete",
   job: "arbete",
@@ -40,7 +43,10 @@ const dictionary: Record<string, string> = {
   vatten: "vatten",
   arbete: "arbete",
   jobba: "arbete",
-  jobb: "arbete"
+  jobb: "arbete",
+  hur: "hur",
+  må: "må",
+  mår: "må"
 };
 
 const fillerWords = new Set([
@@ -74,7 +80,7 @@ const fillerWords = new Set([
 
 const timeWords = new Set(["imorgon"]);
 const pronouns = new Set(["jag", "du"]);
-const verbs = new Set(["vilja", "äta", "hjälp", "arbete"]);
+const verbs = new Set(["vilja", "äta", "hjälp", "arbete", "må"]);
 
 function normalizeToken(token: string) {
   return token
@@ -90,6 +96,11 @@ function uniqueWords(words: string[]) {
 
 function orderForGloss(words: string[]) {
   const unique = uniqueWords(words);
+
+  if (unique.includes("hur") && unique.includes("må") && unique.includes("du")) {
+    return ["hur", "må", "du", ...unique.filter((word) => !["hur", "må", "du"].includes(word))];
+  }
+
   return [
     ...unique.filter((word) => timeWords.has(word)),
     ...unique.filter((word) => pronouns.has(word)),
