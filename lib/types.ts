@@ -7,6 +7,7 @@ export type SignEntry = {
   animationKey: string;
   transcription: string;
   lexiconUrl: string;
+  imageUrl: string;
 };
 
 export type TranslationResult = {

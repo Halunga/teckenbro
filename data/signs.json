@@ -7,7 +7,8 @@
     "videoUrl": "https://teckensprakslexikon.su.se/ord/02798",
     "animationKey": "hands.sign.jag",
     "transcription": "􌤓􌥈􌥕􌥗􌦄􌥼􌤟",
-    "lexiconUrl": "https://teckensprakslexikon.su.se/ord/02798"
+    "lexiconUrl": "https://teckensprakslexikon.su.se/ord/02798",
+    "imageUrl": "https://teckensprakslexikon.su.se/photos/02/jag-02798-photo-1.jpg"
   },
   {
     "id": "sign-du",
@@ -17,7 +18,8 @@
     "videoUrl": "https://teckensprakslexikon.su.se/ord/02817",
     "animationKey": "hands.sign.du",
     "transcription": "􌥈􌤴􌤶􌥵",
-    "lexiconUrl": "https://teckensprakslexikon.su.se/ord/02817"
+    "lexiconUrl": "https://teckensprakslexikon.su.se/ord/02817",
+    "imageUrl": "https://teckensprakslexikon.su.se/photos/02/du-02817-photo-1.jpg"
   },
   {
     "id": "sign-vilja",
@@ -27,7 +29,8 @@
     "videoUrl": "https://teckensprakslexikon.su.se/ord/00167",
     "animationKey": "hands.sign.vilja",
     "transcription": "􌤓􌤢􌥓􌥘􌤟􌥼􌥻",
-    "lexiconUrl": "https://teckensprakslexikon.su.se/ord/00167"
+    "lexiconUrl": "https://teckensprakslexikon.su.se/ord/00167",
+    "imageUrl": "https://teckensprakslexikon.su.se/photos/00/vill-00167-photo-1.jpg"
   },
   {
     "id": "sign-ata",
@@ -37,7 +40,8 @@
     "videoUrl": "https://teckensprakslexikon.su.se/",
     "animationKey": "hands.sign.ata",
     "transcription": "VERIFY",
-    "lexiconUrl": "https://teckensprakslexikon.su.se/"
+    "lexiconUrl": "https://teckensprakslexikon.su.se/",
+    "imageUrl": ""
   },
   {
     "id": "sign-skola",
@@ -47,7 +51,8 @@
     "videoUrl": "https://teckensprakslexikon.su.se/ord/00617",
     "animationKey": "hands.sign.skola",
     "transcription": "􌤵􌥘􌤢􌤢􌤵􌥘􌤟􌥼􌥻",
-    "lexiconUrl": "https://teckensprakslexikon.su.se/ord/00617"
+    "lexiconUrl": "https://teckensprakslexikon.su.se/ord/00617",
+    "imageUrl": "https://teckensprakslexikon.su.se/photos/00/skola-00617-photo-1.jpg"
   },
   {
     "id": "sign-imorgon",
@@ -57,7 +62,8 @@
     "videoUrl": "https://teckensprakslexikon.su.se/ord/02690",
     "animationKey": "hands.sign.imorgon",
     "transcription": "􌤊􌥈􌤵􌥘􌤟􌥼􌦃􌥱􌥾",
-    "lexiconUrl": "https://teckensprakslexikon.su.se/ord/02690"
+    "lexiconUrl": "https://teckensprakslexikon.su.se/ord/02690",
+    "imageUrl": "https://teckensprakslexikon.su.se/photos/02/i-morgon-02690-photo-1.jpg"
   },
   {
     "id": "sign-tack",
@@ -67,7 +73,8 @@
     "videoUrl": "https://teckensprakslexikon.su.se/ord/03442",
     "animationKey": "hands.sign.tack",
     "transcription": "􌥊􌤴􌤶􌦃",
-    "lexiconUrl": "https://teckensprakslexikon.su.se/ord/03442"
+    "lexiconUrl": "https://teckensprakslexikon.su.se/ord/03442",
+    "imageUrl": "https://teckensprakslexikon.su.se/photos/03/tack-03442-photo-1.jpg"
   },
   {
     "id": "sign-hjalp",
@@ -77,7 +84,8 @@
     "videoUrl": "https://teckensprakslexikon.su.se/ord/00625",
     "animationKey": "hands.sign.hjalp",
     "transcription": "􌤴􌤸􌤢􌤢􌤴􌤸􌦎􌥦",
-    "lexiconUrl": "https://teckensprakslexikon.su.se/ord/00625"
+    "lexiconUrl": "https://teckensprakslexikon.su.se/ord/00625",
+    "imageUrl": "https://teckensprakslexikon.su.se/photos/00/hjalpa-00625-photo-1.jpg"
   },
   {
     "id": "sign-vatten",
@@ -87,7 +95,8 @@
     "videoUrl": "https://teckensprakslexikon.su.se/ord/01384",
     "animationKey": "hands.sign.vatten",
     "transcription": "􌤛􌥅􌤵􌤶􌥨",
-    "lexiconUrl": "https://teckensprakslexikon.su.se/ord/01384"
+    "lexiconUrl": "https://teckensprakslexikon.su.se/ord/01384",
+    "imageUrl": "https://teckensprakslexikon.su.se/photos/01/vatten-01384-photo-1.jpg"
   },
   {
     "id": "sign-arbete",
@@ -97,6 +106,7 @@
     "videoUrl": "https://teckensprakslexikon.su.se/ord/02061",
     "animationKey": "hands.sign.arbete",
     "transcription": "􌤦􌤹􌤴􌥗􌤦􌤴􌤶􌤟􌥼􌥻",
-    "lexiconUrl": "https://teckensprakslexikon.su.se/ord/02061"
+    "lexiconUrl": "https://teckensprakslexikon.su.se/ord/02061",
+    "imageUrl": "https://teckensprakslexikon.su.se/photos/02/arbete-02061-photo-1.jpg"
   }
 ]

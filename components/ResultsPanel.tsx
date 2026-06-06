@@ -1,6 +1,4 @@
-"use client";
-
-import { AvatarPanel } from "@/components/AvatarPanel";
+import { SignImageGallery } from "@/components/SignImageGallery";
 import type { TranslationResult } from "@/lib/types";
 
 type ResultsPanelProps = {
@@ -10,7 +8,7 @@ type ResultsPanelProps = {
 export function ResultsPanel({ result }: ResultsPanelProps) {
   return (
     <section className="space-y-6">
-      <AvatarPanel signs={result.matchedSigns} />
+      <SignImageGallery signs={result.matchedSigns} />
 
       <div className="grid gap-6 lg:grid-cols-[minmax(0,1fr)_360px]">
       <div className="space-y-6">

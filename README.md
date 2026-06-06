@@ -11,7 +11,7 @@ It currently uses a small local mock sign database and rule-based API route. The
 - App Router API route at `/api/translate`.
 - Results page with original text, simplified Swedish, sign sequence, sign cards, missing signs, and confidence warnings.
 - Local sign database in `data/signs.json`.
-- Three.js `AvatarPanel` placeholder for future animated signing.
+- Static 2D sign-reference image sequence with no 3D animation.
 - Verified sign references, corpus glosses, movement descriptions, and transcription links from Svenskt teckenspråkslexikon where available.
 - Tailwind CSS styling.
 - Vercel-ready project structure.
