@@ -8,7 +8,12 @@ type ResultsPanelProps = {
 export function ResultsPanel({ result }: ResultsPanelProps) {
   return (
     <section className="space-y-6">
-      <SignImageGallery signs={result.matchedSigns} />
+      <SignImageGallery
+        items={
+          result.sequenceItems ??
+          result.matchedSigns.map((sign) => ({ token: sign.swedishWord, sign }))
+        }
+      />
 
       <div className="grid gap-6 lg:grid-cols-[minmax(0,1fr)_360px]">
       <div className="space-y-6">
@@ -30,8 +35,8 @@ export function ResultsPanel({ result }: ResultsPanelProps) {
           <h3 className="text-lg font-semibold text-ink">Sign sequence</h3>
           <div className="mt-3 flex flex-wrap gap-2">
             {result.signSequence.length > 0 ? (
-              result.signSequence.map((gloss) => (
-                <span key={gloss} className="rounded-md bg-ink px-3 py-2 text-sm font-semibold text-white">
+              result.signSequence.map((gloss, index) => (
+                <span key={`${gloss}-${index}`} className="rounded-md bg-ink px-3 py-2 text-sm font-semibold text-white">
                   {gloss}
                 </span>
               ))
@@ -44,8 +49,8 @@ export function ResultsPanel({ result }: ResultsPanelProps) {
         <div>
           <h3 className="text-lg font-semibold text-ink">Verified sign references</h3>
           <div className="mt-3 grid gap-3 sm:grid-cols-2">
-            {result.matchedSigns.map((sign) => (
-              <article key={sign.id} className="rounded-lg border border-ink/10 bg-white p-4 shadow-soft">
+            {result.matchedSigns.map((sign, index) => (
+              <article key={`${sign.id}-${index}`} className="rounded-lg border border-ink/10 bg-white p-4 shadow-soft">
                 <div className="flex items-start justify-between gap-3">
                   <div>
                     <h4 className="text-lg font-semibold text-ink">{sign.swedishWord}</h4>
@@ -78,8 +83,8 @@ export function ResultsPanel({ result }: ResultsPanelProps) {
             <h3 className="text-lg font-semibold text-ink">Missing signs</h3>
             {result.missingSigns.length > 0 ? (
               <ul className="mt-2 space-y-2">
-                {result.missingSigns.map((word) => (
-                  <li key={word} className="rounded-md border border-clay/20 bg-clay/10 px-3 py-2 text-sm text-ink">
+                {result.missingSigns.map((word, index) => (
+                  <li key={`${word}-${index}`} className="rounded-md border border-clay/20 bg-clay/10 px-3 py-2 text-sm text-ink">
                     {word}
                   </li>
                 ))}
@@ -106,7 +111,7 @@ export function ResultsPanel({ result }: ResultsPanelProps) {
         <h3 className="text-lg font-semibold text-ink">Sequence symbols</h3>
         <ol className="mt-3 space-y-2">
           {result.matchedSigns.map((sign, index) => (
-            <li key={sign.id} className="grid grid-cols-[28px_1fr_auto] items-center gap-3 rounded-md bg-white px-3 py-2">
+            <li key={`${sign.id}-${index}`} className="grid grid-cols-[28px_1fr_auto] items-center gap-3 rounded-md bg-white px-3 py-2">
               <span className="text-xs font-bold text-clay">{index + 1}</span>
               <span className="font-semibold text-ink">{sign.gloss}</span>
               <span className="sts-symbol max-w-28 truncate text-lg font-semibold text-moss">{sign.transcription}</span>

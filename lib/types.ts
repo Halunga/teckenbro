@@ -10,6 +10,11 @@ export type SignEntry = {
   imageUrl: string;
 };
 
+export type TranslationSequenceItem = {
+  token: string;
+  sign: SignEntry | null;
+};
+
 export type TranslationResult = {
   originalText: string;
   simplifiedSwedish: string;
@@ -18,4 +23,5 @@ export type TranslationResult = {
   matchedSigns: SignEntry[];
   missingSigns: string[];
   confidenceWarnings: string[];
+  sequenceItems: TranslationSequenceItem[];
 };

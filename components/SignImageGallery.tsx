@@ -1,11 +1,11 @@
 import Image from "next/image";
-import type { SignEntry } from "@/lib/types";
+import type { TranslationSequenceItem } from "@/lib/types";
 
 type SignImageGalleryProps = {
-  signs: SignEntry[];
+  items: TranslationSequenceItem[];
 };
 
-export function SignImageGallery({ signs }: SignImageGalleryProps) {
+export function SignImageGallery({ items }: SignImageGalleryProps) {
   return (
     <section>
       <div className="flex items-end justify-between gap-4">
@@ -17,16 +17,13 @@ export function SignImageGallery({ signs }: SignImageGalleryProps) {
       </div>
 
       <div className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-        {signs.map((sign, index) => (
-          <a
-            key={sign.id}
-            href={sign.lexiconUrl}
-            target="_blank"
-            rel="noreferrer"
-            className="group overflow-hidden rounded-lg border border-ink/10 bg-white shadow-soft transition hover:border-clay"
+        {items.map(({ token, sign }, index) => (
+          <article
+            key={`${token}-${index}`}
+            className="overflow-hidden rounded-lg border border-ink/10 bg-white shadow-soft"
           >
             <div className="relative aspect-[4/3] bg-mist">
-              {sign.imageUrl ? (
+              {sign?.imageUrl ? (
                 <Image
                   src={sign.imageUrl}
                   alt={`Static reference for ${sign.swedishWord}`}
@@ -37,7 +34,7 @@ export function SignImageGallery({ signs }: SignImageGalleryProps) {
                 />
               ) : (
                 <div className="flex h-full items-center justify-center px-6 text-center text-sm font-medium text-ink/60">
-                  No verified image selected
+                  No verified 2D sign image yet
                 </div>
               )}
               <span className="absolute left-2 top-2 rounded-md bg-ink px-2 py-1 text-xs font-bold text-white">
@@ -46,12 +43,21 @@ export function SignImageGallery({ signs }: SignImageGalleryProps) {
             </div>
             <div className="flex items-center justify-between gap-3 px-3 py-3">
               <div>
-                <p className="font-semibold text-ink">{sign.swedishWord}</p>
-                <p className="text-xs font-semibold text-clay">{sign.gloss}</p>
+                <p className="font-semibold text-ink">{token}</p>
+                <p className="text-xs font-semibold text-clay">{sign?.gloss ?? "MISSING SIGN"}</p>
               </div>
-              <p className="sts-symbol max-w-28 truncate text-xl text-moss">{sign.transcription}</p>
+              {sign ? (
+                <a
+                  href={sign.lexiconUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-xs font-semibold text-moss underline"
+                >
+                  Open sign
+                </a>
+              ) : null}
             </div>
-          </a>
+          </article>
         ))}
       </div>
     </section>

@@ -49,39 +49,6 @@ const dictionary: Record<string, string> = {
   mår: "må"
 };
 
-const fillerWords = new Set([
-  "a",
-  "an",
-  "and",
-  "are",
-  "at",
-  "can",
-  "do",
-  "for",
-  "in",
-  "is",
-  "please",
-  "the",
-  "to",
-  "with",
-  "att",
-  "det",
-  "en",
-  "ett",
-  "i",
-  "kan",
-  "och",
-  "pa",
-  "på",
-  "som",
-  "till",
-  "vill"
-]);
-
-const timeWords = new Set(["imorgon"]);
-const pronouns = new Set(["jag", "du"]);
-const verbs = new Set(["vilja", "äta", "hjälp", "arbete", "må"]);
-
 function normalizeToken(token: string) {
   return token
     .toLowerCase()
@@ -90,37 +57,27 @@ function normalizeToken(token: string) {
     .trim();
 }
 
-function uniqueWords(words: string[]) {
-  return Array.from(new Set(words));
-}
+function translateTokens(sourceTokens: string[]) {
+  const phrase = sourceTokens.join(" ");
 
-function orderForGloss(words: string[]) {
-  const unique = uniqueWords(words);
-
-  if (unique.includes("hur") && unique.includes("må") && unique.includes("du")) {
-    return ["hur", "må", "du", ...unique.filter((word) => !["hur", "må", "du"].includes(word))];
+  if (phrase === "how are you" || phrase === "how do you feel") {
+    return ["hur", "må", "du"];
   }
 
-  return [
-    ...unique.filter((word) => timeWords.has(word)),
-    ...unique.filter((word) => pronouns.has(word)),
-    ...unique.filter((word) => !timeWords.has(word) && !pronouns.has(word) && !verbs.has(word)),
-    ...unique.filter((word) => verbs.has(word))
-  ];
+  return sourceTokens.map((token) => dictionary[token] ?? token);
 }
 
 export function translateToSignLearningOutput(text: string): TranslationResult {
   const sourceTokens = text.split(/\s+/).map(normalizeToken).filter(Boolean);
-  const translatedTokens = sourceTokens
-    .map((token) => dictionary[token] ?? token)
-    .filter((token) => !fillerWords.has(token));
-
-  const keywordTokens = uniqueWords(translatedTokens);
-  const signWords = orderForGloss(keywordTokens);
-  const matchedSigns = signWords
-    .map(findSignBySwedishWord)
+  const keywordTokens = translateTokens(sourceTokens);
+  const sequenceItems = keywordTokens.map((token) => ({
+    token,
+    sign: findSignBySwedishWord(token) ?? null
+  }));
+  const matchedSigns = sequenceItems
+    .map((item) => item.sign)
     .filter((sign): sign is SignEntry => Boolean(sign));
-  const missingSigns = signWords.filter((word) => !findSignBySwedishWord(word));
+  const missingSigns = sequenceItems.filter((item) => !item.sign).map((item) => item.token);
   const signSequence = matchedSigns.map((sign) => sign.gloss);
 
   const confidenceWarnings = [
@@ -143,6 +100,7 @@ export function translateToSignLearningOutput(text: string): TranslationResult {
     keywordTokens,
     matchedSigns,
     missingSigns,
-    confidenceWarnings
+    confidenceWarnings,
+    sequenceItems
   };
 }
