@@ -2,81 +2,101 @@
   {
     "id": "sign-jag",
     "swedishWord": "jag",
-    "gloss": "JAG",
-    "description": "Point toward yourself with a clear, calm movement.",
-    "videoUrl": "/videos/placeholders/jag.mp4",
-    "animationKey": "avatar.sign.jag"
+    "gloss": "PRO1",
+    "description": "Pekfingret, inåtriktat och högervänt, förs inåt till kontakt med bröstet.",
+    "videoUrl": "https://teckensprakslexikon.su.se/ord/02798",
+    "animationKey": "hands.sign.jag",
+    "transcription": "􌤓􌥈􌥕􌥗􌦄􌥼􌤟",
+    "lexiconUrl": "https://teckensprakslexikon.su.se/ord/02798"
   },
   {
     "id": "sign-du",
     "swedishWord": "du",
-    "gloss": "DU",
-    "description": "Point toward the person you are addressing.",
-    "videoUrl": "/videos/placeholders/du.mp4",
-    "animationKey": "avatar.sign.du"
+    "gloss": "PEK",
+    "description": "Pekfingret, framåtriktat och vänstervänt, förs kort framåt.",
+    "videoUrl": "https://teckensprakslexikon.su.se/ord/02817",
+    "animationKey": "hands.sign.du",
+    "transcription": "􌥈􌤴􌤶􌥵",
+    "lexiconUrl": "https://teckensprakslexikon.su.se/ord/02817"
   },
   {
     "id": "sign-vilja",
     "swedishWord": "vilja",
-    "gloss": "VILJA",
-    "description": "Use the placeholder movement for wanting or intention.",
-    "videoUrl": "/videos/placeholders/vilja.mp4",
-    "animationKey": "avatar.sign.vilja"
+    "gloss": "VILL",
+    "description": "Flata handen, vänsterriktad och inåtvänd, upprepade kontakter med bröstet.",
+    "videoUrl": "https://teckensprakslexikon.su.se/ord/00167",
+    "animationKey": "hands.sign.vilja",
+    "transcription": "􌤓􌤢􌥓􌥘􌤟􌥼􌥻",
+    "lexiconUrl": "https://teckensprakslexikon.su.se/ord/00167"
   },
   {
     "id": "sign-ata",
     "swedishWord": "äta",
-    "gloss": "ATA",
-    "description": "Bring the hand toward the mouth area to represent eating.",
-    "videoUrl": "/videos/placeholders/ata.mp4",
-    "animationKey": "avatar.sign.ata"
+    "gloss": "ÄTA",
+    "description": "Open the verified Swedish Sign Language lexicon to choose the correct sign for the intended meaning.",
+    "videoUrl": "https://teckensprakslexikon.su.se/",
+    "animationKey": "hands.sign.ata",
+    "transcription": "VERIFY",
+    "lexiconUrl": "https://teckensprakslexikon.su.se/"
   },
   {
     "id": "sign-skola",
     "swedishWord": "skola",
     "gloss": "SKOLA",
-    "description": "Placeholder school sign for future verified video or avatar motion.",
-    "videoUrl": "/videos/placeholders/skola.mp4",
-    "animationKey": "avatar.sign.skola"
+    "description": "Flata händer, uppåtriktade och inåtvända, upprepade kontakter bredvid varandra.",
+    "videoUrl": "https://teckensprakslexikon.su.se/ord/00617",
+    "animationKey": "hands.sign.skola",
+    "transcription": "􌤵􌥘􌤢􌤢􌤵􌥘􌤟􌥼􌥻",
+    "lexiconUrl": "https://teckensprakslexikon.su.se/ord/00617"
   },
   {
     "id": "sign-imorgon",
     "swedishWord": "imorgon",
-    "gloss": "IMORGON",
-    "description": "Placeholder time sign for tomorrow.",
-    "videoUrl": "/videos/placeholders/imorgon.mp4",
-    "animationKey": "avatar.sign.imorgon"
+    "gloss": "DAG-FRAMTID+EN",
+    "description": "Pekfingret, uppåtriktat och inåtvänt, kontakt med kinden, förs framåt samtidigt som det slås framåt.",
+    "videoUrl": "https://teckensprakslexikon.su.se/ord/02690",
+    "animationKey": "hands.sign.imorgon",
+    "transcription": "􌤊􌥈􌤵􌥘􌤟􌥼􌦃􌥱􌥾",
+    "lexiconUrl": "https://teckensprakslexikon.su.se/ord/02690"
   },
   {
     "id": "sign-tack",
     "swedishWord": "tack",
     "gloss": "TACK",
-    "description": "Move the hand outward from the mouth area in a thanking motion.",
-    "videoUrl": "/videos/placeholders/tack.mp4",
-    "animationKey": "avatar.sign.tack"
+    "description": "T-handen, framåtriktad och vänstervänd, förs framåt.",
+    "videoUrl": "https://teckensprakslexikon.su.se/ord/03442",
+    "animationKey": "hands.sign.tack",
+    "transcription": "􌥊􌤴􌤶􌦃",
+    "lexiconUrl": "https://teckensprakslexikon.su.se/ord/03442"
   },
   {
     "id": "sign-hjalp",
     "swedishWord": "hjälp",
-    "gloss": "HJALP",
-    "description": "Placeholder help sign for future native signer validation.",
-    "videoUrl": "/videos/placeholders/hjalp.mp4",
-    "animationKey": "avatar.sign.hjalp"
+    "gloss": "HJÄLPA",
+    "description": "Flata händer, framåtriktade och uppåtvända, förs uppåt med bibehållen korskontakt ovanpå varandra.",
+    "videoUrl": "https://teckensprakslexikon.su.se/ord/00625",
+    "animationKey": "hands.sign.hjalp",
+    "transcription": "􌤴􌤸􌤢􌤢􌤴􌤸􌦎􌥦",
+    "lexiconUrl": "https://teckensprakslexikon.su.se/ord/00625"
   },
   {
     "id": "sign-vatten",
     "swedishWord": "vatten",
     "gloss": "VATTEN",
-    "description": "Placeholder water sign for future verified media.",
-    "videoUrl": "/videos/placeholders/vatten.mp4",
-    "animationKey": "avatar.sign.vatten"
+    "description": "S-handen, uppåtriktad och vänstervänd, förs upp och ner ett par gånger framför hakan.",
+    "videoUrl": "https://teckensprakslexikon.su.se/ord/01384",
+    "animationKey": "hands.sign.vatten",
+    "transcription": "􌤛􌥅􌤵􌤶􌥨",
+    "lexiconUrl": "https://teckensprakslexikon.su.se/ord/01384"
   },
   {
     "id": "sign-arbete",
     "swedishWord": "arbete",
-    "gloss": "ARBETE",
-    "description": "Placeholder work sign for future animation data.",
-    "videoUrl": "/videos/placeholders/arbete.mp4",
-    "animationKey": "avatar.sign.arbete"
+    "gloss": "ARBETE(G)",
+    "description": "Knutna handen, framåtriktad och vänstervänd, upprepade kontakter ovanpå knutna handen, framåtriktad och högervänd.",
+    "videoUrl": "https://teckensprakslexikon.su.se/ord/02061",
+    "animationKey": "hands.sign.arbete",
+    "transcription": "􌤦􌤹􌤴􌥗􌤦􌤴􌤶􌤟􌥼􌥻",
+    "lexiconUrl": "https://teckensprakslexikon.su.se/ord/02061"
   }
 ]

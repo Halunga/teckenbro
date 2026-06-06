@@ -5,6 +5,8 @@ export type SignEntry = {
   description: string;
   videoUrl: string;
   animationKey: string;
+  transcription: string;
+  lexiconUrl: string;
 };
 
 export type TranslationResult = {

@@ -9,7 +9,10 @@ type ResultsPanelProps = {
 
 export function ResultsPanel({ result }: ResultsPanelProps) {
   return (
-    <section className="grid gap-6 lg:grid-cols-[minmax(0,1fr)_380px]">
+    <section className="space-y-6">
+      <AvatarPanel signs={result.matchedSigns} />
+
+      <div className="grid gap-6 lg:grid-cols-[minmax(0,1fr)_360px]">
       <div className="space-y-6">
         <div>
           <h2 className="text-2xl font-bold text-ink">Learning result</h2>
@@ -41,7 +44,7 @@ export function ResultsPanel({ result }: ResultsPanelProps) {
         </div>
 
         <div>
-          <h3 className="text-lg font-semibold text-ink">Sign cards</h3>
+          <h3 className="text-lg font-semibold text-ink">Verified sign references</h3>
           <div className="mt-3 grid gap-3 sm:grid-cols-2">
             {result.matchedSigns.map((sign) => (
               <article key={sign.id} className="rounded-lg border border-ink/10 bg-white p-4 shadow-soft">
@@ -50,14 +53,26 @@ export function ResultsPanel({ result }: ResultsPanelProps) {
                     <h4 className="text-lg font-semibold text-ink">{sign.swedishWord}</h4>
                     <p className="text-sm font-semibold text-clay">{sign.gloss}</p>
                   </div>
-                  <span className="rounded-md bg-mist px-2 py-1 text-xs font-medium text-moss">placeholder</span>
+                  <div className="text-right">
+                    <p className="max-w-28 truncate text-lg font-bold text-ink">{sign.transcription}</p>
+                    <p className="text-xs font-semibold text-moss">STS transcription</p>
+                  </div>
                 </div>
                 <p className="mt-3 text-sm leading-6 text-ink/70">{sign.description}</p>
-                <p className="mt-3 break-all text-xs text-ink/55">{sign.videoUrl}</p>
-                <p className="mt-1 break-all text-xs text-ink/55">{sign.animationKey}</p>
+                <a
+                  href={sign.lexiconUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="mt-4 inline-flex rounded-md border border-ink/15 px-3 py-2 text-xs font-semibold text-ink transition hover:border-clay hover:text-clay"
+                >
+                  Watch verified sign
+                </a>
               </article>
             ))}
           </div>
+          <p className="mt-2 text-xs text-ink/55">
+            Transcriptions and movement descriptions are sourced from Svenskt teckenspråkslexikon where available.
+          </p>
         </div>
 
         <div className="grid gap-4 md:grid-cols-2">
@@ -89,7 +104,19 @@ export function ResultsPanel({ result }: ResultsPanelProps) {
         </div>
       </div>
 
-      <AvatarPanel activeAnimationKeys={result.matchedSigns.map((sign) => sign.animationKey)} />
+      <aside className="rounded-lg border border-ink/10 bg-mist p-4">
+        <h3 className="text-lg font-semibold text-ink">Sequence symbols</h3>
+        <ol className="mt-3 space-y-2">
+          {result.matchedSigns.map((sign, index) => (
+            <li key={sign.id} className="grid grid-cols-[28px_1fr_auto] items-center gap-3 rounded-md bg-white px-3 py-2">
+              <span className="text-xs font-bold text-clay">{index + 1}</span>
+              <span className="font-semibold text-ink">{sign.gloss}</span>
+              <span className="max-w-28 truncate text-xs font-semibold text-moss">{sign.transcription}</span>
+            </li>
+          ))}
+        </ol>
+      </aside>
+      </div>
     </section>
   );
 }

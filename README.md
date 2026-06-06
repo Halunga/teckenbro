@@ -12,6 +12,7 @@ It currently uses a small local mock sign database and rule-based API route. The
 - Results page with original text, simplified Swedish, sign sequence, sign cards, missing signs, and confidence warnings.
 - Local sign database in `data/signs.json`.
 - Three.js `AvatarPanel` placeholder for future animated signing.
+- Verified sign references, corpus glosses, movement descriptions, and transcription links from Svenskt teckenspråkslexikon where available.
 - Tailwind CSS styling.
 - Vercel-ready project structure.
 - Supabase-ready environment placeholders for future database work.
@@ -70,3 +71,5 @@ Suggested next steps:
 ## Ethical Note
 
 This is a learning aid, not a certified interpreter. Swedish Sign Language is a natural language with its own grammar, regional variation, and Deaf cultural context. Involve native Swedish Sign Language users before public launch, especially before adding videos, avatar animation, or confidence claims.
+
+Verified reference data links to [Svenskt teckenspråkslexikon](https://teckensprakslexikon.su.se/) by Stockholm University, licensed CC BY-NC-SA 4.0. Confirm licensing and attribution requirements before reusing or embedding its media in a public product.
