@@ -54,7 +54,7 @@ export function ResultsPanel({ result }: ResultsPanelProps) {
                     <p className="text-sm font-semibold text-clay">{sign.gloss}</p>
                   </div>
                   <div className="text-right">
-                    <p className="max-w-28 truncate text-lg font-bold text-ink">{sign.transcription}</p>
+                    <p className="sts-symbol max-w-28 truncate text-2xl font-bold text-ink">{sign.transcription}</p>
                     <p className="text-xs font-semibold text-moss">STS transcription</p>
                   </div>
                 </div>
@@ -111,7 +111,7 @@ export function ResultsPanel({ result }: ResultsPanelProps) {
             <li key={sign.id} className="grid grid-cols-[28px_1fr_auto] items-center gap-3 rounded-md bg-white px-3 py-2">
               <span className="text-xs font-bold text-clay">{index + 1}</span>
               <span className="font-semibold text-ink">{sign.gloss}</span>
-              <span className="max-w-28 truncate text-xs font-semibold text-moss">{sign.transcription}</span>
+              <span className="sts-symbol max-w-28 truncate text-lg font-semibold text-moss">{sign.transcription}</span>
             </li>
           ))}
         </ol>

@@ -2,9 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "FreeSans-SWL";
+  src: url("https://zrajm.org/teckentranskription/freesans-swl.woff2") format("woff2");
+  font-display: swap;
+}
+
 :root {
   color-scheme: light;
   background: #fbfaf6;
+}
+
+.sts-symbol {
+  font-family: "FreeSans-SWL", sans-serif;
 }
 
 * {

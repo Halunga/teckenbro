@@ -144,7 +144,7 @@ export function AvatarPanel({ signs }: AvatarPanelProps) {
           <h2 className="mt-1 text-xl font-semibold">{activeSign?.gloss ?? "READY"}</h2>
         </div>
         <div className="text-right">
-          <p className="max-w-40 truncate text-sm font-semibold">{activeSign?.transcription ?? "READY"}</p>
+          <p className="sts-symbol max-w-40 truncate text-xl font-semibold">{activeSign?.transcription ?? "READY"}</p>
           <p className="text-xs text-white/55">STS transcription</p>
         </div>
       </div>
